@@ -4,20 +4,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <title>Site with Figma</title>
 </head>
 
 <body>
+
+   <ul id="slide-out" class="sidenav">
+    <li><a href="#!"><i class="material-icons">home</i>Главная</a></li>
+    <li><a href="#!"><i class="material-icons">people</i>О нас</a></li>
+    <li><a href="#!"><i class="material-icons">grade</i>Услуги</a></li>
+    <li><a href="#!"><i class="material-icons">phone</i>Контакты</a></li>
+    <li><div class="divider"></div></li>
+    <li><a href="#!" class="sidenav-close"><i class="material-icons">close</i>Закрыть</a></li>
+  </ul>
+           
   <header class="header">
     <div class="container">
       <div class="header__title">
         <img src="img/logo.svg" alt="logo" class="logo">
-        <button class="burger">
+        <a class="burger sidenav-trigger" data-target="slide-out">
           <span class="burger__line"></span>
           <span class="burger__line"></span>
           <span class="burger__line"></span>
-        </button>
+        </a>
       </div>
       <h1 class="h1">Реализуем крупнейшие проекты в России</h1>
       <h4 class="h4">Стадионы, газопроводы, мосты, дамбы</h4>
@@ -158,34 +169,34 @@
     <div class="container">
       <h2 class="text-h2 section__h2">Ответы на вопросы</h2>
       <div class="question__items">
-        <div class="question_item">
-          <h3 class="text-h3 question_h3 close">РАБОТАЕТЕ ЛИ ВЫ ПО 249 ФЗ?</h3>
+        <details class="question_item">
+          <summary class="text-h3 question_h3">РАБОТАЕТЕ ЛИ ВЫ ПО 249 ФЗ?</summary>
           <p class="text-p question_p">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem
             Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный
             печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.
           </p>
-        </div>
-        <div class="question_item">
-          <h3 class="text-h3 question_h3 open">РАБОТАЕТЕ ЛИ ВЫ ПО 249 ФЗ?</h3>
+        </details>
+        <details class="question_item">
+          <summary class="text-h3 question_h3">РАБОТАЕТЕ ЛИ ВЫ ПО 249 ФЗ?</summary>
           <p class="text-p question_p">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem
             Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный
             печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.
           </p>
-        </div>
-        <div class="question_item">
-          <h3 class="text-h3 question_h3 close">РАБОТАЕТЕ ЛИ ВЫ ПО 249 ФЗ?</h3>
+        </details>
+        <details class="question_item">
+          <summary class="text-h3 question_h3">РАБОТАЕТЕ ЛИ ВЫ ПО 249 ФЗ?</summary>
           <p class="text-p question_p">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem
             Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный
             печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.
           </p>
-        </div>
-        <div class="question_item">
-          <h3 class="text-h3 question_h3 close">РАБОТАЕТЕ ЛИ ВЫ ПО 249 ФЗ?</h3>
+        </details>
+        <details class="question_item">
+          <summary class="text-h3 question_h3">РАБОТАЕТЕ ЛИ ВЫ ПО 249 ФЗ?</summary>
           <p class="text-p question_p">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem
             Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный
             печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.
           </p>
-        </div>
+        </details>
       </div>
     </div>
   </section>
@@ -305,6 +316,9 @@
       </div>
     </div>
   </footer>
+
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>
