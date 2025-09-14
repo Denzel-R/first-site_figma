@@ -10,7 +10,6 @@
 </head>
 
 <body>
-
    <ul id="slide-out" class="sidenav">
     <li><a href="#!"><i class="material-icons">home</i>Главная</a></li>
     <li><a href="#!"><i class="material-icons">people</i>О нас</a></li>
@@ -88,6 +87,15 @@
       </div>
     </div>
   </section>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Заголовок окна</h4>
+      <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Необходимыми семь букв, курсивных подзаголовок безорфографичный жаренные агентство запятых, свой великий рыбными вопрос она реторический то большого строчка. Своего которой большого лучше. Своих проектах журчит, ты взгляд подзаголовок запятой первую агентство ipsum дорогу пустился семантика бросил раз рукописи! Маленькая, послушавшись однажды первую запятых ведущими снова моей, рот своего, букв грустный проектах знаках океана там предупреждал она агентство пустился! Грамматики дорогу, имени не безопасную строчка путь вопроса дороге за дал последний мир буквенных единственное правилами, маленький собрал толку это продолжил, злых однажды всемогущая! Имени использовало своих курсивных до там переписали приставка.</p>
+    </div>
+  </div>
+
   <section class="request">
     <div class="container">
       <div class="request__inner">
@@ -96,10 +104,10 @@
           <h4 class="h4__request">Реализуем самые смелые решения в России!</h4>
         </div>
         <div class="request__right">
-          <button class="button__request">
+          <a class="button__request modal-trigger" href="#modal1">
             <img src="img/envelope.svg" alt="letter" class="img__request">
             Ваш запрос
-          </button>
+          </a>
         </div>
       </div>
     </div>
@@ -266,10 +274,10 @@
           <h4 class="h4__request">Оставьте заявку и мы свяжемся с вами!</h4>
         </div>
         <div class="request__right">
-          <button class="button__request">
+          <a class="button__request modal-trigger" href="#modal1">
             <img src="img/envelope.svg" alt="letter" class="img__request">
             Ваш запрос
-          </button>
+          </a>
         </div>
       </div>
     </div>
