@@ -315,7 +315,7 @@ body {
 }
 .button__request {
   text-decoration: none;
-  color: var(--dark-color)
+  color: var(--dark-color);
   cursor: pointer;
   border:none;
   background-color: #fff;
